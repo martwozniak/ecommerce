@@ -11,7 +11,7 @@ import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
-
+@CrossOrigin
 @RestController
 public class ProductController {
 
@@ -42,7 +42,7 @@ public class ProductController {
     return result;
     }
 
-    @GetMapping("/product/{id")
+    @GetMapping("/product/{id}")
     public Product getProductById(@PathVariable final String id) {
         System.out.print(id);
         return new Product("300",
