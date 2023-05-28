@@ -15,7 +15,6 @@ async function getData() {
   return response.json();
 }
  
-
 export default async function Home() {
   const data = await getData();
   console.log(data.data)
